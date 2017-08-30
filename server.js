@@ -34,7 +34,7 @@ app.get('/test-db', function(req,res) {
             res.send(JSON.stringify(result.rows));
         }       
         });
-})
+});
 app.get('/article-three', function(req,res) {
     res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
 });
